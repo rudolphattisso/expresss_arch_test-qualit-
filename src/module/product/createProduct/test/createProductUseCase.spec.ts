@@ -128,7 +128,7 @@ describe('US-1 : Créer un produit', () => {
             createProductUseCase.execute({
                 title: 'switch2',
                 description: 'nouvelle@console',
-                price: 500
+                price: 1100
             })
             // Alors une erreur doit être envoyée "la description ne doit pas contenir @"
         ).rejects.toThrow('la description ne doit pas contenir @');
