@@ -75,7 +75,7 @@ describe('US-1 : Créer un produit', () => {
             createProductUseCase.execute({
                 title: 'switch2',
                 description: 'nouvelle console',
-                price: 500
+                price: 11000
             })
             // Alors une erreur doit être envoyée "le prix doit être inférieur à 10000»
         ).rejects.toThrow('le prix doit être inférieur à 10000');
