@@ -1,5 +1,7 @@
 /.idea
 /node_modules
 .env.local
+/build
+/coverage
 
 sonar-project.properties
