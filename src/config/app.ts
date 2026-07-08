@@ -1,6 +1,9 @@
 import express, { Request, Response } from 'express';
 const cors = require('cors');
 const createProductController = require('../module/product/createProduct/createProductController');
+const updateProductController = require('../module/product/updateProduct/updateProductController');
+const listProductsController = require('../module/product/listProducts/listProductsController');
+const deleteProductController = require('../module/product/deleteProduct/deleteProductController');
 
 export function buildApp() {
     const app = express();
@@ -12,6 +15,9 @@ export function buildApp() {
     });
 
     app.use('/api', createProductController);
+    app.use('/api', updateProductController);
+    app.use('/api', listProductsController);
+    app.use('/api', deleteProductController);
 
     return app;
 }
